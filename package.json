@@ -1,0 +1,13 @@
+{
+  "name": "inprodi",
+  "private" : true,
+  "version": "0.0.0",
+  "description": "",
+  "author": "Nestor Eduardo Navarro Arizaga",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+        "src/*"
+    ]
+}
+}
