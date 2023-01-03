@@ -9,7 +9,6 @@
     "dist"
   ],
   "scripts": {
-    "dev": "vite",
     "test": "jest --watchAll",
     "build": "yarn clean && tsc",
     "clean": "rm -rf dist",

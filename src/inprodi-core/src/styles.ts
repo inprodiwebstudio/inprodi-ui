@@ -8,7 +8,7 @@ const styles = createStyles((theme, _params ?: { focused : boolean; }, getRef?) 
 	const grayColors = theme.colors.gray;
 	const redColors =  theme.colors.red;
 	const primaryColors =  theme.colors?.primary ?? theme.colors.blue;
-
+	
 	return ({
 		label : {
 			fontSize   : "12px",
