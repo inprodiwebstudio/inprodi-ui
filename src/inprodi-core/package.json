@@ -1,7 +1,6 @@
 {
   "name": "@inprodi/core",
   "description": "React componets focudes on developer experience",
-  "private": false,
   "version": "0.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -36,8 +35,8 @@
     "build-sb": "build-storybook"
   },
   "peerDependencies": {
-    "@mantine/core": "5.9.6",
-    "@mantine/hooks": "5.9.6",
+    "@mantine/core": ">=5.9.6",
+    "@mantine/hooks": ">=5.9.6",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "react-hook-form": ">=7.0.0"
