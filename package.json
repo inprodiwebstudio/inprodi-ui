@@ -2,12 +2,23 @@
   "name": "inprodi",
   "private" : true,
   "version": "0.0.0",
-  "description": "",
+  "description": "Inprodi Components Monorepo",
   "author": "Nestor Eduardo Navarro Arizaga",
   "license": "MIT",
+  "main": "index.ts",
+  "repository": {
+    "url": "https://github.com/inprodiwebstudio/inprodi-ui",
+    "type": "git"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "workspaces": {
     "packages": [
-        "src/*"
+        "src/*",
+        "examples/*"
     ]
 }
 }
