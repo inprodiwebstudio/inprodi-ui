@@ -36,18 +36,18 @@
     "build-sb": "build-storybook"
   },
   "peerDependencies": {
-    "@mantine/core": "5.9.6",
-    "@mantine/hooks": "5.9.6",
+    "@mantine/core": "^5.9.6",
+    "@mantine/hooks": "^5.9.6",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
-    "react-hook-form": ">=7.0.0"
+    "react-hook-form": "^7.41.3"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.18.6",
     "@emotion/react": "^11.10.5",
     "@hookform/resolvers": "^2.9.10",
-    "@mantine/core": "^5.9.6",
-    "@mantine/hooks": "^5.9.6",
+    "@mantine/core": "^5.10.0",
+    "@mantine/hooks": "^5.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.41.3",
