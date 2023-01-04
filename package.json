@@ -14,6 +14,7 @@
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
+    "test:watch": "yarn lerna run test:watch",
     "publish": "yarn build && yarn lerna run publish --no-private",
     "commit": "cz"
   },

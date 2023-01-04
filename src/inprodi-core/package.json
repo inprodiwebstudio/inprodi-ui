@@ -28,7 +28,8 @@
     "inprodi"
   ],
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "build": "yarn clean && tsc",
     "clean": "rm -rf dist",
     "clear-all": "rm -rf build node_modules",
