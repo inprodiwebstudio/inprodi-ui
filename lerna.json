@@ -6,7 +6,8 @@
   "npmClient": "yarn",
   "stream": true,
   "packages": [
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
   "command": {
     "publish": {
