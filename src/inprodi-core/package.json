@@ -36,11 +36,11 @@
     "build-sb": "build-storybook"
   },
   "peerDependencies": {
-    "@mantine/core": "^5.9.6",
-    "@mantine/hooks": "^5.9.6",
+    "@mantine/core": ">=5.10.0",
+    "@mantine/hooks": ">=5.10.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
-    "react-hook-form": "^7.41.3"
+    "react-hook-form": ">=7.41.3"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.18.6",
