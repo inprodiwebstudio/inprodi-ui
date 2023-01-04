@@ -36,13 +36,8 @@
     "build-sb": "build-storybook"
   },
   "peerDependencies": {
-<<<<<<< HEAD
-    "@mantine/core": ">=5.9.6",
-    "@mantine/hooks": ">=5.9.6",
-=======
     "@mantine/core": ">=5.10.0",
     "@mantine/hooks": ">=5.10.0",
->>>>>>> 9b0669aa32e9a2453cc19791368ed0f3e55931aa
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "react-hook-form": ">=7.41.3"
