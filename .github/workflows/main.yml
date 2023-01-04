@@ -26,8 +26,28 @@ jobs:
         with:
           node-version: 16.10.0
 
+      - name: Setup npm
+        run: |
+          npm set @inprodi:registry=https://npm.pkg.github.com/inprodi
+          npm set "//npm.pkg.github.com/:_authToken=${{ secrets.GH_TOKEN }}"
+
       - name: Install Dependencies
         run: yarn install
 
       - name: Run tests
         run: yarn test
+
+      - name: Build
+        run: yarn build
+
+      - name: Version and publish
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+          yarn lerna version --conventional-commits --conventional-graduate --yes
+
+          yarn lerna publish from-git --no-private --yes
+      
