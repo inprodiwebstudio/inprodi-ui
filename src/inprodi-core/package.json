@@ -1,7 +1,12 @@
 {
   "name": "@inprodi/core",
   "description": "React componets focudes on developer experience",
+<<<<<<< HEAD
   "version": "0.0.0",
+=======
+  "private": false,
+  "version": "0.0.3",
+>>>>>>> 9b0669aa32e9a2453cc19791368ed0f3e55931aa
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
@@ -35,18 +40,23 @@
     "build-sb": "build-storybook"
   },
   "peerDependencies": {
+<<<<<<< HEAD
     "@mantine/core": ">=5.9.6",
     "@mantine/hooks": ">=5.9.6",
+=======
+    "@mantine/core": ">=5.10.0",
+    "@mantine/hooks": ">=5.10.0",
+>>>>>>> 9b0669aa32e9a2453cc19791368ed0f3e55931aa
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
-    "react-hook-form": ">=7.0.0"
+    "react-hook-form": ">=7.41.3"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.18.6",
     "@emotion/react": "^11.10.5",
     "@hookform/resolvers": "^2.9.10",
-    "@mantine/core": "^5.9.6",
-    "@mantine/hooks": "^5.9.6",
+    "@mantine/core": "^5.10.0",
+    "@mantine/hooks": "^5.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.41.3",
@@ -83,5 +93,9 @@
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "cad79a3ee3a8271383e239fcf1dde4aaf7e6a264"
 }
