@@ -20,6 +20,7 @@
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
     "test:watch": "yarn lerna run test:watch",
+    "version" : "yarn lerna version --no-private",
     "lerna-publish": "yarn build && yarn lerna run publish --no-private",
     "commit": "cz"
   },
