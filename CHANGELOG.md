@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/inprodiwebstudio/inprodi-ui/compare/v0.2.0...v0.2.1) (2023-01-05)
+
+
+### Bug Fixes
+
+* **app.tsx:** import of inprodi/core fixed ([14bcf8e](https://github.com/inprodiwebstudio/inprodi-ui/commit/14bcf8eaf837a9f4f2c9a43522597df1df6b33e9))
+
+
+
+
+
+
 # [0.2.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v0.1.0...v0.2.0) (2023-01-04)
 
 
