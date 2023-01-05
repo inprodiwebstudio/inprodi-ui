@@ -1,7 +1,7 @@
 import * as Yup                      from "yup";
 import { useForm, FormProvider }     from "react-hook-form";
 import { yupResolver }               from "@hookform/resolvers/yup";
-import { RHFTextInput, RHFTextArea } from "../../packages/inprodi-core";
+import { RHFTextInput, RHFTextArea } from "../../packages/inprodi-core/src";
 import { MantineProvider }           from "@mantine/core";
 
 function App() {
