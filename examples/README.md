@@ -36,11 +36,11 @@ Before to star using the inputs, it's important to know that under the hood the 
 ### Form inputs usage
 It's important to know that to avoid the warning _"A component is changing an uncontrolled input to be controlled..."_. We need to register the text input into the **defatultValues**.
 ```
-import * as Yup                      from "yup";
-import { useForm, FormProvider }     from "react-hook-form";
-import { yupResolver }               from "@hookform/resolvers/yup";
-import { MantineProvider }           from "@mantine/core";
-import { RHFTextInput, RHFTextArea } from "@inprodi/core";
+import * as Yup                                               from "yup";
+import { useForm }                                            from "react-hook-form";
+import { yupResolver }                                        from "@hookform/resolvers/yup";
+import { Button, MantineProvider, Stack }                     from "@mantine/core";
+import { FormProvider, RHFTextInput, RHFTextArea, RHFSwitch } from "../../packages/inprodi-core/src";
 
 export function App() {
 	const schema = Yup.object().shape({
@@ -53,25 +53,34 @@ export function App() {
 		defaultValues : {
 			myInpt   : "",
 			textArea : "",
+			mySwitch : "",
 		},
 		resolver : yupResolver(schema),
-
 	});
 	const { handleSubmit } = methods;
 	const onSubmit = (data : any) => {
 		console.log(data);
 	};
 	return (
-	    <FormProvider {...methods}>
-            <form onSubmit={handleSubmit(onSubmit)}>
-			    <RHFTextInput name="myInpt" label="Inpt" />
-			    <RHFTextArea name="textArea" label="TextArea" />
-			</form>
-	    </FormProvider>
+		<MantineProvider theme={{
+			primaryShade : 6,
+			primaryColor : "primary",
+			colors       : {
+				primary : [ "#EAECF6", "#D4D9ED", "#AAB4DC", "#95A1D3", "#7F8ECA", "#5569B9", "#2A43A7", "#223686", "#192864", "#152254" ],
+			},
+		}}>
+			<FormProvider methods={methods} onSubmit={handleSubmit(onSubmit)}>
+				<Stack>
+					<RHFTextInput name="myInpt" label="Inpt" />
+					<RHFSwitch name="mySwitch" label="switch"/>
+					<RHFTextArea name="textArea" label="TextArea"/>
+					<Button type="submit">Submit</Button>
+				</Stack>
+			</FormProvider>
+		</MantineProvider>
 	);
 }
 ```
-
 ### Styling Inputs
 All the inputs have a defect style and some configurations are not configurable, however there're some configuration that we are be able to change such as the primary color.
 To configurate it, we just need to follow the example below: 
