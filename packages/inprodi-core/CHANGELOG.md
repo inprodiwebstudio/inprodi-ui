@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v0.2.1...v0.3.0) (2023-01-06)
+
+
+### Bug Fixes
+
+* imports fixed ([f9149c0](https://github.com/inprodiwebstudio/inprodi-ui/commit/f9149c0f4ed0ec69b55db83ef9542eab40f043db))
+* **rhfiputtext.storie:** react importation added ([ba173e8](https://github.com/inprodiwebstudio/inprodi-ui/commit/ba173e8d8accff6dab2dec769bb08778fadee3cd))
+
+
+### Features
+
+* **formprovider:** fromProvider added ([d874c52](https://github.com/inprodiwebstudio/inprodi-ui/commit/d874c52d8713f3ccdc52043dc5700c423ac83a70))
+* **index.ts:** fromProvider exported ([f491b94](https://github.com/inprodiwebstudio/inprodi-ui/commit/f491b946ecea808383de4747862e6c719c0330f5))
+* rhfswitch added ([f3da59a](https://github.com/inprodiwebstudio/inprodi-ui/commit/f3da59a18ba5330027b682f41bc610067723fc75))
+
+
+
+
+
+
 ## [0.2.1](https://github.com/inprodiwebstudio/inprodi-ui/compare/v0.2.0...v0.2.1) (2023-01-05)
 
 **Note:** Version bump only for package @inprodi/core
