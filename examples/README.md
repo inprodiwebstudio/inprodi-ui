@@ -4,8 +4,8 @@
 
 - [@inprodi/core](#inprodi-core)
     - [Get started](#get-started)
-        -[With Vite template](#with-vite-template)
-        -[Install dependecies](#install-dependecies)
+        - [With Vite template](#with-vite-template)
+        - [Install dependecies](#install-dependecies)
     - [Form inputs usage](#form-inputs-usage)
         - [Considerations](#considerations)
         - [Styling Inputs](#styling-inputs)
