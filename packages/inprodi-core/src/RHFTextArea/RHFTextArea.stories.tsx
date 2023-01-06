@@ -1,3 +1,4 @@
+import React                             from "react";
 import { useForm, FormProvider }         from "react-hook-form";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { RHFTextArea, RHFTextAreaProps } from "./RHFTextArea";
@@ -12,12 +13,7 @@ export default {
 } as ComponentMeta<typeof RHFTextArea>;
 
 const Template: ComponentStory<typeof RHFTextArea> = (args : RHFTextAreaProps) => {
-	const methods = useForm({
-		defaultValues : {
-			basic    : "",
-			myInptLg : "",
-		},
-	});
+	const methods = useForm();
 	return(
 		<FormProvider {...methods}>
 			<RHFTextArea {...args} />

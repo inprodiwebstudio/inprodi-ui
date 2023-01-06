@@ -1,4 +1,3 @@
-//External componets
 import { useFormContext, Controller }                         from "react-hook-form";
 import { InputVariant, MantineSize, Textarea, TextareaProps } from "@mantine/core";
 import { useFocusWithin }                                     from "@mantine/hooks";
