@@ -15,7 +15,7 @@
 ## Packages
 - [@inprodi/core](https://github.com/inprodiwebstudio/inprodi-ui/tree/main/packages/inprodi-core): ui library boosted by [mantine](https://mantine.dev/)
 ## Monorepo
-To archive the follow aproach @inprodi/core, @inprodi/icons, @inprodi/dropzone, etc. We need to decied the monorepo system.
+To archive the following aproach @inprodi/core, @inprodi/icons, @inprodi/dropzone, etc. We need to decide the monorepo system.
 ### What is a monorepo?
 A monorepo is a version-controlled code repository that holds many projects. While these projects may be related, they are often logically independent and run by different teams... 
 To know more about monorepo [visit](https://semaphoreci.com/blog/what-is-monorepo).
@@ -40,10 +40,10 @@ packages/
 
 package.json
 ````
-- **examples:** we provie to the user a example folder ready to run an aplication to show how to use the inprodi library.
+- **examples:** we provide to the user an example folder ready to run an application to show how to use the inprodi library.
 - **packages:** all the inprodi library package.
 
-To visualize the worksapce run:
+To visualize the workspace run:
 ````
 npx nx graph
 ````
