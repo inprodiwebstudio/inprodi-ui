@@ -1,8 +1,8 @@
-import * as Yup                      from "yup";
-import { useForm, FormProvider }     from "react-hook-form";
-import { yupResolver }               from "@hookform/resolvers/yup";
-import { RHFTextInput, RHFTextArea } from "../../packages/inprodi-core/src";
-import { MantineProvider }           from "@mantine/core";
+import * as Yup                                               from "yup";
+import { useForm }                                            from "react-hook-form";
+import { yupResolver }                                        from "@hookform/resolvers/yup";
+import { Button, MantineProvider, Stack }                     from "@mantine/core";
+import { FormProvider, RHFTextInput, RHFTextArea, RHFSwitch } from "../../packages/inprodi-core/src";
 
 function App() {
 	const schema = Yup.object().shape({
@@ -15,9 +15,9 @@ function App() {
 		defaultValues : {
 			myInpt   : "",
 			textArea : "",
+			mySwitch : "",
 		},
 		resolver : yupResolver(schema),
-
 	});
 	const { handleSubmit } = methods;
 	const onSubmit = (data : any) => {
@@ -31,11 +31,13 @@ function App() {
 				primary : [ "#EAECF6", "#D4D9ED", "#AAB4DC", "#95A1D3", "#7F8ECA", "#5569B9", "#2A43A7", "#223686", "#192864", "#152254" ],
 			},
 		}}>
-			<FormProvider {...methods}>
-				<form onSubmit={handleSubmit(onSubmit)}>
+			<FormProvider methods={methods} onSubmit={handleSubmit(onSubmit)}>
+				<Stack>
 					<RHFTextInput name="myInpt" label="Inpt" />
+					<RHFSwitch name="mySwitch" label="switch"/>
 					<RHFTextArea name="textArea" label="TextArea"/>
-				</form>
+					<Button type="submit">Submit</Button>
+				</Stack>
 			</FormProvider>
 		</MantineProvider>
 	);
