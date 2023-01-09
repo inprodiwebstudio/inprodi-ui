@@ -1,0 +1,51 @@
+{
+  "name": "@inprodi/icons",
+  "description": "Inprodi react icons library",
+  "private": false,
+  "version": "0.0.0",
+  "author": "Nestor Eduardo Navarro Arizaga",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/inprodiwebstudio/inprodi-ui",
+    "type": "git",
+    "directory": "packages/inprodi-icons"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "ui",
+    "icons",
+    "library",
+    "frontend",
+    "inprodi"
+  ],
+  "scripts": {
+    "clean": "rm -rf src/icons && rm -rf dist",
+    "clear-all": "rm -rf build node_modules",
+    "svgr": "svgr --icon --typescript --replace-attr-values #000=currentColor -d src/icons assets",
+    "build": "yarn clean && yarn svgr && rollup -c"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@svgr/cli": "^6.5.1",
+    "@types/react": "^18.0.26",
+    "react": "^18.2.0",
+    "rollup": "^3.7.5",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.4"
+  }
+}
