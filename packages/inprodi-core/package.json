@@ -9,7 +9,7 @@
   "repository": {
     "url": "https://github.com/inprodiwebstudio/inprodi-ui",
     "type": "git",
-    "directory": "src/inprodi-core"
+    "directory": "packages/inprodi-core"
   },
   "files": [
     "dist",

@@ -2,7 +2,7 @@ import * as Yup                                               from "yup";
 import { useForm }                                            from "react-hook-form";
 import { yupResolver }                                        from "@hookform/resolvers/yup";
 import { Button, MantineProvider, Stack }                     from "@mantine/core";
-import { FormProvider, RHFTextInput, RHFTextArea, RHFSwitch } from "../../packages/inprodi-core/src";
+import { FormProvider, RHFTextInput, RHFTextArea, RHFSwitch } from "../../packages/inprodi-core/dist";
 
 function App() {
 	const schema = Yup.object().shape({
@@ -36,7 +36,7 @@ function App() {
 					<RHFTextInput name="myInpt" label="Inpt" />
 					<RHFSwitch name="mySwitch" label="switch"/>
 					<RHFTextArea name="textArea" label="TextArea"/>
-					<Button type="submit">Submit</Button>
+					<Button type="submit" >Submit</Button>
 				</Stack>
 			</FormProvider>
 		</MantineProvider>
