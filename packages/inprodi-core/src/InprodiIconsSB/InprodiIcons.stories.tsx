@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { User }                          from "../../../inprodi-icons/dist";
 
 export default {
-	title     : "Icons",
+	title     : "All Icons/Basic",
 	component : User,
 } as ComponentMeta<typeof User>;
 

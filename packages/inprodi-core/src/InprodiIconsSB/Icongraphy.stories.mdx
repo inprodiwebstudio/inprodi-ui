@@ -1,0 +1,17 @@
+import { Meta, Title, IconGallery, IconItem } from "@storybook/addon-docs/";
+
+import { Icons }  from "../../../inprodi-icons/src";
+
+<Meta title="All Icons/Iconography" />
+
+# Iconography
+
+<IconGallery>
+    {
+        Object.entries(Icons).map(([key, Icon]) => 
+            <IconItem key={key} name={key}>
+                <Icon color="#223686" />
+            </IconItem>
+        )
+    }
+</IconGallery>
