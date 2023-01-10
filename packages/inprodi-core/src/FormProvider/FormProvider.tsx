@@ -5,7 +5,7 @@ import { FormProvider as Form, UseFormReturn} from "react-hook-form";
 export interface FormProviderProps {
     children : ReactNode | ReactNode[];
     onSubmit : () => void;
-    methods : UseFormReturn<any, any>;
+    methods : UseFormReturn<any, any> | any;
 }
 
 export function FormProvider({ children, onSubmit, methods } : FormProviderProps) {
