@@ -9,6 +9,9 @@
     - [Form inputs usage](#form-inputs-usage)
         - [Considerations](#considerations)
         - [Styling Inputs](#styling-inputs)
+- [@inprodi/icons](#inprodi-icons)
+	 - [Install icons](#install-icons)
+	 - [Usage icons](#usage-icons)
 
 
 
@@ -21,12 +24,12 @@ To see more about the configurarion of our component visit the following link[in
 
 ### With Vite template
 Let's create a new application:
-```
+```bash
 yarn create vite mantine-vite --template react-ts
 ```
 
 ### Install dependecies
-```
+```bash
 yarn add @inprodi/core @mantine/core @mantine/hooks react-hook-form
 ```
 
@@ -35,7 +38,7 @@ Before to star using the inputs, it's important to know that under the hood the 
 
 ### Form inputs usage
 It's important to know that to avoid the warning _"A component is changing an uncontrolled input to be controlled..."_. We need to register the text input into the **defatultValues**.
-```
+```jsx
 import * as Yup                                               from "yup";
 import { useForm }                                            from "react-hook-form";
 import { yupResolver }                                        from "@hookform/resolvers/yup";
@@ -84,7 +87,7 @@ export function App() {
 ### Styling Inputs
 All the inputs have a defect style and some configurations are not configurable, however there're some configuration that we are be able to change such as the primary color.
 To configurate it, we just need to follow the example below: 
-```
+```jsx
 <MantineProvider 
     theme={{
         primaryShade : 6,
@@ -99,7 +102,25 @@ To configurate it, we just need to follow the example below:
     </FormProvider>
 </MantineProvider>
 ```
+## @inprodi/icons
 
+### Install icons
+```bash
+yarn add @inprodi/icons
+```
+
+### Usage icons
+
+```jsx
+import React from "react";
+import { User } from "@inprodi/icons";
+
+const App = () => {
+  return <User />;
+};
+
+export default App;
+```
 ## License
 
 MIT
