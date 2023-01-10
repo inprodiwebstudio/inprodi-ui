@@ -5,7 +5,7 @@ import styles                                                 from "../styles";
 
 export interface RHFTextAreaProps extends TextareaProps, React.RefAttributes<HTMLTextAreaElement> {
     /**
-    * Input's name being registered. https://react-hook-form.com/api/usecontroller/controller
+    * Input's name being registered. [controller](https://react-hook-form.com/api/usecontroller/controller)
     */
 	name : string;
 	/**
@@ -21,19 +21,19 @@ export interface RHFTextAreaProps extends TextareaProps, React.RefAttributes<HTM
     */
 	placeholder?: string;
 	/**
-    * to change the inpt size.To see more: https://mantine.dev/core/textarea/
+    * to change the inpt size.To see more: [textarea](https://mantine.dev/core/textarea/)
     */
     size?: MantineSize;
     /**
-    * flag to autosize.To see more: https://mantine.dev/core/textarea/
+    * flag to autosize.To see more: [textarea](https://mantine.dev/core/textarea/)
     */
     autosize ?: boolean;
 	/**
-    * to change the inpt radius.To see more: https://mantine.dev/core/textarea/
+    * to change the inpt radius.To see more: [textarea](https://mantine.dev/core/textarea/)
     */
     radius?: MantineSize;
 	/**
-    * Input varaint type: To see more: https://mantine.dev/core/textarea/
+    * Input varaint type: To see more: [textarea](https://mantine.dev/core/textarea/)
     */
 	variant ?: InputVariant;
 }
