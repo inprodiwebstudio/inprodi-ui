@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v0.3.0...v0.4.0) (2023-01-10)
+
+
+### Bug Fixes
+
+* transformIgnorePatterns added on jest.config and babel.config added ([9e306dd](https://github.com/inprodiwebstudio/inprodi-ui/commit/9e306dd6105f1985fc7f53c887da59d4dfe4f38d))
+
+
+### Features
+
+* iconography added on storybook ([fef7016](https://github.com/inprodiwebstudio/inprodi-ui/commit/fef70168c58f04692a82026b1eb39019cc79f2f8))
+* interfaces updated ([0870956](https://github.com/inprodiwebstudio/inprodi-ui/commit/08709567bbf67f158e9244b5f82f01c159e31e54))
+* rhfPassword added ([586ee64](https://github.com/inprodiwebstudio/inprodi-ui/commit/586ee646266ae865f5e515711913fb0e82a0eb43))
+* rhfPasswordInpt exported ([ce5a3ad](https://github.com/inprodiwebstudio/inprodi-ui/commit/ce5a3ad1717f84b549a62d4e3d6ac8adde02203a))
+
+
+
+
+
+
 # [0.3.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v0.2.1...v0.3.0) (2023-01-06)
 
 
