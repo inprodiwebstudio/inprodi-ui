@@ -1,14 +1,12 @@
 import React from "react";
-//External componets
 import { useFormContext, Controller }                           from "react-hook-form";
 import { TextInput, TextInputProps, MantineSize, InputVariant } from "@mantine/core";
 import { useFocusWithin }                                       from "@mantine/hooks";
-//styles
 import styles from "../styles";
 
 export interface RHFTextInputProps extends TextInputProps, React.RefAttributes<HTMLInputElement> {
 	/**
-    * Input's name being registered. https://react-hook-form.com/api/usecontroller/controller
+    * Input's name being registered. [controller](https://react-hook-form.com/api/usecontroller/controller)
     */
 	name : string;
 	/**
@@ -24,15 +22,15 @@ export interface RHFTextInputProps extends TextInputProps, React.RefAttributes<H
     */
 	placeholder?: string;
 	/**
-    * to change the inpt size.To see more: https://mantine.dev/core/text-input/
+    * to change the inpt size.To see more: [textInput](https://mantine.dev/core/text-input/)
     */
    size?: MantineSize;
 	/**
-    * to change the inpt radius.To see more: https://mantine.dev/core/text-input/
+    * to change the inpt radius.To see more: [textInput](https://mantine.dev/core/text-input/)
     */
     radius?: MantineSize;
 	/**
-    * Input varaint type: To see more: https://mantine.dev/core/text-input/
+    * Input varaint type: To see more: [textInput](https://mantine.dev/core/text-input/)
     */
 	variant ?: InputVariant;
 }
