@@ -2,7 +2,14 @@ import * as Yup                                               from "yup";
 import { useForm }                                            from "react-hook-form";
 import { yupResolver }                                        from "@hookform/resolvers/yup";
 import { Button, MantineProvider, Stack }                     from "@mantine/core";
-import { FormProvider, RHFTextInput, RHFTextArea, RHFSwitch } from "../../packages/inprodi-core/dist";
+
+import { 
+	FormProvider,
+	RHFTextInput,
+	RHFTextArea,
+	RHFSwitch,
+	RHFPasswordInput
+} from "../../packages/inprodi-core/dist";
 
 function App() {
 	const schema = Yup.object().shape({
@@ -10,12 +17,15 @@ function App() {
 			.required("El campo es requerido"),
 		textArea : Yup.string()
 			.required("El campo es requerido"),
+		password : Yup.string()
+			.required("El campo es requerido"),
 	});
 	const methods = useForm({
 		defaultValues : {
 			myInpt   : "",
 			textArea : "",
-			mySwitch : "",
+			mySwitch : false,
+			password : "",
 		},
 		resolver : yupResolver(schema),
 	});
@@ -36,6 +46,7 @@ function App() {
 					<RHFTextInput name="myInpt" label="Inpt" />
 					<RHFSwitch name="mySwitch" label="switch"/>
 					<RHFTextArea name="textArea" label="TextArea"/>
+					<RHFPasswordInput name="password" label="Password"/>
 					<Button type="submit" >Submit</Button>
 				</Stack>
 			</FormProvider>
