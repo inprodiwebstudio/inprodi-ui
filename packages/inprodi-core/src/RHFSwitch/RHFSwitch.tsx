@@ -3,7 +3,7 @@ import { Switch, SwitchProps }        from "@mantine/core";
 
 export interface IRHFSwitch extends SwitchProps {
     /**
-    * Input's name being registered. https://react-hook-form.com/api/usecontroller/controller
+    * Input's name being registered. [controller](https://react-hook-form.com/api/usecontroller/controller)
     */
 	name : string;
     /**
