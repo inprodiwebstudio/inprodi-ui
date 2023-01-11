@@ -1,9 +1,9 @@
-import React from "react";
+import React                                              from "react";
 import { useFormContext, Controller }                     from "react-hook-form";
 import { MantineSize, PasswordInput, PasswordInputProps } from "@mantine/core";
 import { useFocusWithin }                                 from "@mantine/hooks";
-import { OpenedEye, ClosedEye }                           from "@inprodi/icons";
-import styles from "../styles";
+import { OpenedEyeOutline, ClosedEyeOutline }             from "../../../inprodi-icons/dist";
+import styles                                             from "../styles";
 
 export interface RHFPasswordInputProps extends PasswordInputProps, React.RefAttributes<HTMLInputElement> {
     /**
@@ -25,7 +25,7 @@ export interface RHFPasswordInputProps extends PasswordInputProps, React.RefAttr
     /**
     * Determines whether required asterisk should be rendered, overrides required prop, does not add required attribute to the input [PasswordInput](https://mantine.dev/core/password-input/)
     */
-    withAsterisk ?: boolean;	
+    withAsterisk ?: boolean;
     /**
     * to change the inpt size.To see more: [textInput](https://mantine.dev/core/text-input/)
     */
@@ -46,8 +46,8 @@ export const RHFPasswordInput = ({
 	const { control } = useFormContext();
 
 	const getVisibilityIcon = ({ reveal, size } : { reveal : boolean; size : number }) =>{
-		return reveal ? <OpenedEye data-testid="opened-eye" fontSize={size} />
-			: <ClosedEye data-testid="closed-eye" fontSize={size} />;
+		return reveal ? <OpenedEyeOutline data-testid="opened-eye" fontSize={size} />
+			: <ClosedEyeOutline data-testid="closed-eye" fontSize={size} />;
 	};
 
 	return (
@@ -67,7 +67,7 @@ export const RHFPasswordInput = ({
 						error={!!error}
 						autoComplete="off"
 						onChange={handleOnChange}
-						icon={<OpenedEye fontSize={14} />}
+						icon={<OpenedEyeOutline fontSize={14} />}
 						visibilityToggleIcon={getVisibilityIcon}
 						label={error?.message ? error.message : label}
 						classNames={{
