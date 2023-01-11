@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/inprodiwebstudio/inprodi-ui/compare/v1.0.0...v1.0.1) (2023-01-11)
+
+
+### Bug Fixes
+
+* **rhfpasswordinput:** icones come from @inprodi/icons ([e8d8b02](https://github.com/inprodiwebstudio/inprodi-ui/commit/e8d8b02ea207a2f3d6628f4c7d44048ed62d0167))
+
+
+
+
+
 # [1.0.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v0.4.0...v1.0.0) (2023-01-11)
 
 
