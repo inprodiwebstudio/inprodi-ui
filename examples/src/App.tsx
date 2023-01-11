@@ -1,14 +1,14 @@
-import * as Yup                                               from "yup";
-import { useForm }                                            from "react-hook-form";
-import { yupResolver }                                        from "@hookform/resolvers/yup";
-import { Button, MantineProvider, Stack }                     from "@mantine/core";
+import * as Yup                           from "yup";
+import { useForm }                        from "react-hook-form";
+import { yupResolver }                    from "@hookform/resolvers/yup";
+import { Button, MantineProvider, Stack } from "@mantine/core";
 
-import { 
+import {
 	FormProvider,
 	RHFTextInput,
 	RHFTextArea,
 	RHFSwitch,
-	RHFPasswordInput
+	RHFPasswordInput,
 } from "../../packages/inprodi-core/dist";
 
 function App() {
