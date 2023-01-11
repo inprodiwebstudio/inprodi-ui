@@ -2,7 +2,7 @@
   "name": "@inprodi/icons",
   "description": "Inprodi react icons library",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Nestor Eduardo Navarro Arizaga",
   "license": "MIT",
   "main": "dist/index.js",
@@ -27,7 +27,7 @@
     "svgr-color": "svgr --icon --typescript --template src/svgr-template -d src/color assets/color",
     "svgr-filled": "svgr --icon --config-file src/svgr-config.json --template src/svgr-template -d src/filled assets/filled",
     "svgr-outline": "svgr --icon --config-file src/svgr-config.json --template src/svgr-template -d src/outline assets/outline",
-    "svgr" : "yarn svgr-outline && yarn svgr-filled && yarn svgr-color",
+    "svgr": "yarn svgr-outline && yarn svgr-filled && yarn svgr-color",
     "clear-all": "rm -rf build node_modules",
     "clean": "rm -rf src/outline && rm -rf src/filled && rm -rf src/color && rm -rf dist",
     "build": "yarn clean && yarn svgr && rollup -c"

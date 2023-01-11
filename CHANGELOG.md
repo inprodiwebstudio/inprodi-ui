@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v1.0.1...v1.1.0) (2023-01-11)
+
+
+### Features
+
+* filled and color icons added ([2c4bbb0](https://github.com/inprodiwebstudio/inprodi-ui/commit/2c4bbb0606b29bd13d1ead6381c1048127bc4721))
+* icons example added ([8334de4](https://github.com/inprodiwebstudio/inprodi-ui/commit/8334de45a91ed0da849f28c01bd910e820e87677))
+
+
+
+
+
 ## [1.0.1](https://github.com/inprodiwebstudio/inprodi-ui/compare/v1.0.0...v1.0.1) (2023-01-11)
 
 
