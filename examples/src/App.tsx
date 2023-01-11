@@ -9,7 +9,7 @@ import {
 	RHFTextArea,
 	RHFSwitch,
 	RHFPasswordInput,
-} from "../../packages/inprodi-core/dist";
+} from "../../packages/inprodi-core/src";
 
 function App() {
 	const schema = Yup.object().shape({
