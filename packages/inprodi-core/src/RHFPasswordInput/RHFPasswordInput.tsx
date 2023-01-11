@@ -2,7 +2,7 @@ import React                                              from "react";
 import { useFormContext, Controller }                     from "react-hook-form";
 import { MantineSize, PasswordInput, PasswordInputProps } from "@mantine/core";
 import { useFocusWithin }                                 from "@mantine/hooks";
-import { OpenedEyeOutline, ClosedEyeOutline }             from "../../../inprodi-icons/dist";
+import { OpenedEyeOutline, ClosedEyeOutline }             from "@inprodi/icons";
 import styles                                             from "../styles";
 
 export interface RHFPasswordInputProps extends PasswordInputProps, React.RefAttributes<HTMLInputElement> {
