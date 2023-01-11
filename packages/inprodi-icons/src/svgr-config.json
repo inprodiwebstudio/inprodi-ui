@@ -1,0 +1,10 @@
+{
+    "typescript": true,
+    "replaceAttrValues": {
+      "#000": "{props.color || `currentColor`}"
+    },
+    "svgProps": {
+      "width": "{props.width|| 16}",
+      "height": "{props.height || 16}"
+    }
+}
