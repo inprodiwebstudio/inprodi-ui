@@ -24,9 +24,11 @@
     "inprodi"
   ],
   "scripts": {
-    "clean": "rm -rf src/icons && rm -rf dist",
+    "svgr-color": "svgr --icon --typescript --replace-attr-values -d src/color assets/color",
+    "svgr-filled": "svgr --icon --typescript --replace-attr-values #000=currentColor -d src/filled assets/filled",
+    "svgr": "svgr --icon --config-file src/svgr-config.json --template src/svgr-template -d src/outline assets/outline",
     "clear-all": "rm -rf build node_modules",
-    "svgr": "svgr --icon --typescript --replace-attr-values #000=currentColor -d src/icons assets",
+    "clean": "rm -rf src/outline && rm -rf dist",
     "build": "yarn clean && yarn svgr && rollup -c"
   },
   "peerDependencies": {

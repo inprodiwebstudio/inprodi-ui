@@ -1,15 +1,15 @@
-import * as Yup                                               from "yup";
-import { useForm }                                            from "react-hook-form";
-import { yupResolver }                                        from "@hookform/resolvers/yup";
-import { Button, MantineProvider, Stack }                     from "@mantine/core";
+import * as Yup                           from "yup";
+import { useForm }                        from "react-hook-form";
+import { yupResolver }                    from "@hookform/resolvers/yup";
+import { Button, MantineProvider, Stack } from "@mantine/core";
 
-import { 
+import {
 	FormProvider,
 	RHFTextInput,
 	RHFTextArea,
 	RHFSwitch,
-	RHFPasswordInput
-} from "../../packages/inprodi-core/dist";
+	RHFPasswordInput,
+} from "../../packages/inprodi-core/src";
 
 function App() {
 	const schema = Yup.object().shape({
