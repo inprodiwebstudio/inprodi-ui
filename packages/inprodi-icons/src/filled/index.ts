@@ -1,0 +1,15 @@
+export { default as AvatarFilled } from "./AvatarFilled";
+export { default as BrochureFilled } from "./BrochureFilled";
+export { default as ContractFilled } from "./ContractFilled";
+export { default as CurriculumFilled } from "./CurriculumFilled";
+export { default as DiamondFilled } from "./DiamondFilled";
+export { default as DocumentationFilled } from "./DocumentationFilled";
+export { default as EmptyBoxFilled } from "./EmptyBoxFilled";
+export { default as HandshakeFilled } from "./HandshakeFilled";
+export { default as LinkFilled } from "./LinkFilled";
+export { default as LockFilled } from "./LockFilled";
+export { default as OrganigramFilled } from "./OrganigramFilled";
+export { default as StarFilled } from "./StarFilled";
+export { default as StrategyFilled } from "./StrategyFilled";
+export { default as UploadFilled } from "./UploadFilled";
+export { default as VideoFilled } from "./VideoFilled";
