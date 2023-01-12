@@ -1,17 +1,40 @@
 import { Meta, Title, IconGallery, IconItem } from "@storybook/addon-docs/";
 
-import { Icons }  from "../../../inprodi-icons/src";
+import { ColorIcons, FilledIcons, OutlineIcons }  from "../../../inprodi-icons/src";
 
 <Meta title="inprodi Icons/Iconography" />
 
 # Iconography
-
+## Color
 <IconGallery>
     {
-        Object.entries(Icons).map(([key, Icon]) => 
+        Object.entries(ColorIcons).map(([key, Icon]) => 
             <IconItem key={key} name={key}>
-                <Icon color="#223686" />
+                <Icon />
             </IconItem>
         )
     }
 </IconGallery>
+
+## Filled
+<IconGallery>
+    {
+        Object.entries(FilledIcons).map(([key, Icon]) => 
+            <IconItem key={key} name={key}>
+                <Icon />
+            </IconItem>
+        )
+    }
+</IconGallery>
+
+## Outline
+<IconGallery>
+    {
+        Object.entries(OutlineIcons).map(([key, Icon]) => 
+            <IconItem key={key} name={key}>
+                <Icon />
+            </IconItem>
+        )
+    }
+</IconGallery>
+
