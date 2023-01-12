@@ -1,15 +1,15 @@
 import React                             from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { UserOutline }                   from "../../../inprodi-icons/dist";
+import { AvatarFilled }                   from "../../../inprodi-icons/dist";
 
 export default {
-	title     : "Inprodi Icons/Basic",
-	component : UserOutline,
-} as ComponentMeta<typeof UserOutline>;
+	title     : "Inprodi Icons/Filled",
+	component : AvatarFilled,
+} as ComponentMeta<typeof AvatarFilled>;
 
-const Template: ComponentStory<typeof UserOutline> = (args : React.SVGProps<SVGSVGElement>) => {
+const Template: ComponentStory<typeof AvatarFilled> = (args : React.SVGProps<SVGSVGElement>) => {
 	return(
-		<UserOutline {...args} />
+		<AvatarFilled {...args} />
 	);
 };
 
