@@ -18,13 +18,35 @@ npm install @inprodi/icons
 ```
 
 ### Usage
-
+_Filled_
 ```jsx
 import React from "react";
-import { User } from "@inprodi/icons";
+import { DiamondFilled } from "@inprodi/icons";
 
 const App = () => {
-  return <User />;
+  return <DiamondFilled />;
+};
+
+export default App;
+```
+_Outline_
+```jsx
+import React from "react";
+import { UserOutline } from "@inprodi/icons";
+
+const App = () => {
+  return <UserOutline />;
+};
+
+export default App;
+```
+_Color_
+```jsx
+import React from "react";
+import { WordColor } from "@inprodi/icons";
+
+const App = () => {
+  return <WordColor />;
 };
 
 export default App;
