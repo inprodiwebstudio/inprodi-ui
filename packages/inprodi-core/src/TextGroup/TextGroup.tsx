@@ -1,11 +1,22 @@
-import { Text }                       from "@mantine/core";
-import { Flex, TextProps, FlexProps } from "@mantine/core";
-import useStyles                      from "./TextGroup.styles";
+import {
+	Flex,
+	Text,
+	TextProps,
+	FlexProps,
+	MantineNumberSize,
+	DefaultMantineColor,
+} from "@mantine/core";
+import useStyles from "./TextGroup.styles";
 
 export interface TextGroupProps extends TextProps {
     leftIcon ?: React.ReactNode;
     rightIcon ?: React.ReactNode;
-	wrapperProps ?: FlexProps
+	wrapperProps ?: FlexProps;
+	size ?: MantineNumberSize;
+	/**
+    * color text: DefaultMantineColor = "dark" | "gray" | "red" | "pink" | "grape" | "violet" | "indigo" | "blue" | "cyan" | "green" | "lime" | "yellow" | "orange" | "teal" | (string & {})
+    */
+	color ?: "dimmed" | DefaultMantineColor;
 }
 
 export const TextGroup = ({

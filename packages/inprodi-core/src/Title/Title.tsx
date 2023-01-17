@@ -3,10 +3,16 @@ import {
 	MantineNumberSize,
 	Title as MantineTitle,
 	TitleProps as MantineTitleProps,
+	DefaultMantineColor,
 } from "@mantine/core";
 
 export interface TitleProps extends MantineTitleProps {
+	order ?: TitleOrder;
     size ?: MantineNumberSize;
+	/**
+    * color text: DefaultMantineColor = "dark" | "gray" | "red" | "pink" | "grape" | "violet" | "indigo" | "blue" | "cyan" | "green" | "lime" | "yellow" | "orange" | "teal" | (string & {})
+    */
+	color ?: "dimmed" | DefaultMantineColor;
 }
 export const Title = ({children, size = "md", color, ...rest} : TitleProps) => {
 	const getOrderTitle = () => {

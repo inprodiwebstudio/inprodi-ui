@@ -1,13 +1,12 @@
 import {
 	Text,
-	Title,
 	Stack,
 	TextProps,
 	StackProps,
 	MantineNumberSize,
 	DefaultMantineColor,
 } from "@mantine/core";
-import { TitleProps } from "../Title/Title";
+import { TitleProps, Title } from "../Title/Title";
 
 export interface TitleGroupProps extends StackProps {
     text : string;
