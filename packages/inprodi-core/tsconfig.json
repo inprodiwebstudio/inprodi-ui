@@ -19,7 +19,7 @@
     "esModuleInterop": true ,
     "declarationMap": true,
   },
-  "include": ["src", ".storybook/theme.ts"],
+  "include": ["src"],
   "exclude": [
     "src/**/*.test.ts",
     "src/**/*.test.tsx",
