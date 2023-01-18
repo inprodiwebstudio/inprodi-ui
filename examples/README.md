@@ -9,6 +9,7 @@
     - [Form inputs usage](#form-inputs-usage)
         - [Considerations](#considerations)
         - [Styling Inputs](#styling-inputs)
+	- [Typography usage](#typography-usage)
 - [@inprodi/icons](#inprodi-icons)
 	 - [Install icons](#install-icons)
 	 - [Usage icons](#usage-icons)
@@ -101,6 +102,36 @@ To configurate it, we just need to follow the example below:
         <RHFTextInput name="myInpt" label="Inpt" />
     </FormProvider>
 </MantineProvider>
+```
+### Typography usage
+#### Title
+```jsx
+<Title order={1}>This is h1 title</Title>
+```
+
+#### TitleGroup
+```jsx
+<TitleGroup
+	size="lg"
+	title="This is a Title"
+	text="This is the complementary text for the title"
+/>
+```
+#### Link
+```jsx
+import { BrowserRouter } from "react-router-dom";
+
+export function App() {
+	return (
+		<BrowserRouter>
+			<Link to="/">Route</Link>
+		</BrowserRouter>
+	);
+}
+```
+#### TextGroup
+```jsx
+<TextGroup leftIcon={<CirclesOutline />}>Text Icon</TextGroup>
 ```
 ## @inprodi/icons
 

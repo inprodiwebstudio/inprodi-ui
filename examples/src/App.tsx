@@ -1,4 +1,5 @@
 import * as Yup                                                                             from "yup";
+import { BrowserRouter }                                                                    from "react-router-dom";
 import { useForm }                                                                          from "react-hook-form";
 import { yupResolver }                                                                      from "@hookform/resolvers/yup";
 import { ActionIcon, Button, Card, Center, Grid, Group, Kbd, MantineProvider, Stack, Text } from "@mantine/core";
@@ -16,7 +17,6 @@ import {
 	Link,
 	TextGroup,
 } from "../../packages/inprodi-core/src";
-import { BrowserRouter } from "react-router-dom";
 
 function App() {
 	const schema = Yup.object().shape({
