@@ -43,8 +43,8 @@
     "@mantine/hooks": ">=5.10.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
-    "react-router-dom": ">=6.6.2",
-    "react-hook-form": ">=7.41.5"
+    "react-hook-form": ">=7.41.5",
+    "react-router-dom": ">=6.6.2"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.18.6",
