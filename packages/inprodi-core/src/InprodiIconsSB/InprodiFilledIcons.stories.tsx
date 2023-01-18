@@ -5,6 +5,9 @@ import { AvatarFilled }                   from "../../../inprodi-icons/dist";
 export default {
 	title     : "Inprodi Icons/Filled",
 	component : AvatarFilled,
+	argTypes  : {
+		color : { control : "color" },
+	},
 } as ComponentMeta<typeof AvatarFilled>;
 
 const Template: ComponentStory<typeof AvatarFilled> = (args : React.SVGProps<SVGSVGElement>) => {
@@ -17,6 +20,6 @@ export const BasicIcon = Template.bind({});
 BasicIcon.args = {
 	fillOpacity : 1,
 	size        : 25,
-	color       : "gray",
+	color       : "currentColor",
 } as React.SVGProps<SVGSVGElement>;
 

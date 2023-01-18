@@ -11,7 +11,7 @@ import {
 	RHFTextArea,
 	RHFSwitch,
 	RHFPasswordInput,
-} from "../../packages/inprodi-core/src";
+} from "../../packages/inprodi-core/dist";
 
 function App() {
 	const schema = Yup.object().shape({
