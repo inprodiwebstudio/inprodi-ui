@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.0.0...v2.0.1) (2023-01-18)
+
+
+### Bug Fixes
+
+* **tsconfig:** build @inprodi/core fixed ([aeea460](https://github.com/inprodiwebstudio/inprodi-ui/commit/aeea460406f143cf21dd422875dcd29038fd0b29))
+
+
+### Features
+
+* typography section added ([6e43802](https://github.com/inprodiwebstudio/inprodi-ui/commit/6e438020325d1402257dbea48d1ead35c9333c99))
+
+
+
+
+
 # [2.0.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v1.1.0...v2.0.0) (2023-01-18)
 
 
