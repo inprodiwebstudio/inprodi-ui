@@ -97,7 +97,7 @@ describe("RHFTextArea", () => {
 			);
 		};
 
-		const { getByRole, getByLabelText } = render(
+		const { getByRole, getByLabelText, getByText } = render(
 			<Provider>
 				<RHFTextArea label="labelTest" name="test" />
 			</Provider>
@@ -108,8 +108,7 @@ describe("RHFTextArea", () => {
 		const btn = getByRole("button");
 		await act( () => fireEvent.submit(btn));
 
-
-		expect(getByLabelText("Error")).toBeTruthy();
+		expect(getByText("Error")).toBeTruthy();
 	});
 
 	test("should has the error styles", async () => {

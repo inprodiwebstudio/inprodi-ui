@@ -34,12 +34,14 @@ TextInputStyled.args = {
 	size        : "sm",
 	radius      : "lg",
 	placeholder : "Your name",
+	description : "description",
 };
 
 export const Invalid = Template.bind({});
 Invalid.args = {
-	label       : "Name",
-	name        : "name",
-	placeholder : "Your name",
-	error       : true,
+	label        : "Name",
+	name         : "name",
+	placeholder  : "Your name",
+	error        : "Campo requerido",
+	withAsterisk : true,
 };

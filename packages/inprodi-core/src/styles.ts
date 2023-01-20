@@ -1,22 +1,21 @@
 import { createStyles } from "@mantine/core";
-const styles = createStyles((theme, _params ?: { focused : boolean; }, getRef?) => {
+
+const styles = createStyles((theme, _params : { focused ?: boolean; }, getRef?) => {
 	const { rgba } = theme.fn;
 
 	const isDark = theme.colorScheme === "dark";
-	//colors Array
 	const darkColors = theme.colors.dark;
 	const grayColors = theme.colors.gray;
 	const redColors =  theme.colors.red;
-	const primaryColors =  theme.colors?.primary ?? theme.colors.blue;
+	const primaryColors =  theme.colors.primary;
 
 	return ({
 		label : {
-			fontSize   : "12px",
+			width      : "100%",
 			color      : isDark ? darkColors[0] : grayColors[7],
 			fontWeight : 600,
-		},
-		labelError : {
-			color : `${redColors[isDark ? 7 : 6]} !important`,
+			maxHeight  : 31,
+			minHeight  : 21,
 		},
 		input : {
 			fontWeight : 500,
@@ -25,15 +24,16 @@ const styles = createStyles((theme, _params ?: { focused : boolean; }, getRef?) 
 			},
 			"&::placeholder" : {
 				fontWeight : 400,
+				color      : isDark  ? darkColors[3] : grayColors[5],
 			},
 		},
 		invalid : {
-			backgroundColor : isDark ? rgba(redColors[8], 0.15) : `${redColors[0]} !important`,
-			borderColor     : isDark ? redColors[7] : `${redColors[6]} !important`,
-			color           : isDark ? "#fff" : "#000",
+			backgroundColor : isDark ? `${rgba(redColors[9], 0.4)} !important` : `${redColors[0]} !important`,
+			borderColor     : isDark ? `${redColors[5]} !important` : `${redColors[6]} !important`,
+			color           : `${redColors[isDark ? 5 : 6]} !important`,
 
 			"&::placeholder" : {
-				color : redColors[4],
+				color : isDark  ? redColors[6] : redColors[5],
 			},
 		},
 		invalidWrapper : {
@@ -47,18 +47,23 @@ const styles = createStyles((theme, _params ?: { focused : boolean; }, getRef?) 
 		},
 		pswInput : {
 			"&:focus-within" : {
-				backgroundColor : isDark ? rgba(primaryColors[8], 0.15) : `${primaryColors?.[0]}`,
+				backgroundColor : isDark ? rgba(primaryColors[8], 0.15) : primaryColors?.[0],
 			},
 		},
 		invalidPassword : {
-			backgroundColor : isDark ? rgba(redColors[8], 0.15) : `${redColors[0]} !important`,
-			borderColor     : isDark ? redColors[7] : `${redColors[6]} !important`,
+			backgroundColor : isDark ? `${rgba(redColors[9], 0.2)} !important` : `${redColors[0]} !important`,
+			borderColor     : isDark ? `${redColors[5]} !important` : `${redColors[6]} !important`,
+			color           : `${redColors[isDark ? 5 : 6]} !important`,
+
+			"&::placeholder" : {
+				color : isDark  ? redColors[6] : redColors[5],
+			},
 
 			[`& .${ getRef("innerInput") }`] : {
 				border : "none",
 
 				"$::placeholder" : {
-					color : `${ redColors[4] } !important`,
+					color : `${redColors[isDark ? 6 : 5]} !important`,
 				},
 			},
 		},

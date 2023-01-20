@@ -1,7 +1,8 @@
-import React                                                    from "react";
+import React, { ReactNode }                                     from "react";
 import { useFormContext, Controller }                           from "react-hook-form";
 import { TextInput, TextInputProps, MantineSize, InputVariant } from "@mantine/core";
 import { useFocusWithin }                                       from "@mantine/hooks";
+import { InputHelpLabel, InputHelpLabelProps }                  from "../InputHelpLabel";
 import styles                                                   from "../styles";
 
 export interface RHFTextInputProps extends TextInputProps, React.RefAttributes<HTMLInputElement> {
@@ -12,7 +13,7 @@ export interface RHFTextInputProps extends TextInputProps, React.RefAttributes<H
 	/**
     * Input's label
     */
-	label ?: string;
+	label ?: ReactNode;
 	/**
     * An extra action to invoke when the inpt changes. Note: the library still control the input's value.
     */
@@ -32,13 +33,31 @@ export interface RHFTextInputProps extends TextInputProps, React.RefAttributes<H
 	/**
     * Input varaint type: To see more: [textInput](https://mantine.dev/core/text-input/)
     */
-	variant ?: InputVariant;
+   variant ?: InputVariant;
+   /**
+   * Tooltip label
+   */
+	help ?: ReactNode;
+	/**
+    * All the props to customize all the label and helper node.
+    */
+	helpLabelProps ?: Omit<InputHelpLabelProps, "label" | "helpLabel">;
 }
 
-export const RHFTextInput = ({ name, label, onChange, ...rest } :RHFTextInputProps) => {
+export const RHFTextInput = ({
+	size,
+	name,
+	label,
+	help,
+	withAsterisk,
+	helpLabelProps,
+	onChange,
+	...rest
+} : RHFTextInputProps) => {
 	const { ref, focused } = useFocusWithin();
 	const { classes } = styles({ focused });
 	const { control } = useFormContext();
+	const showInputHelp = !!(help && label);
 	return (
 		<Controller
 			name={name}
@@ -52,15 +71,29 @@ export const RHFTextInput = ({ name, label, onChange, ...rest } :RHFTextInputPro
 					<TextInput
 						{...field}
 						ref={ref}
-						error={!!error}
+						name={name}
+						size={size}
+						error={error?.message}
+						withAsterisk={!showInputHelp ? withAsterisk : false}
 						onChange={handleChange}
-						label={error?.message ? error.message : label}
+						label={
+							showInputHelp ?
+								<InputHelpLabel
+									size={size}
+									label={label}
+									helpLabel={help}
+									required={withAsterisk}
+									{...helpLabelProps}
+								/>
+								:
+								label
+						}
 						classNames={{
 							icon    : classes.icon,
 							input   : classes.input,
 							invalid : classes.invalid,
 							wrapper : `${error && classes.invalidWrapper}`,
-							label   : `${classes.label} ${error && classes.labelError}`,
+							label   : classes.label,
 						}}
 						{...rest}
 					/>
