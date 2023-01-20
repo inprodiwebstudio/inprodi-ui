@@ -4,7 +4,7 @@
 
 Inprodi core components library.
 
-[View documentation](https://guileless-parfait-5f3c72.netlify.app/?path=/story/core-form-textarea--basic)
+[View documentation](https://guileless-parfait-5f3c72.netlify.app/?path=/story/inprodi-icons-iconography--page)
 
 ## Installation
 

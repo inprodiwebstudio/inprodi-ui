@@ -137,7 +137,11 @@ export function App() {
 
 ### Install icons
 ```bash
+# With yarn
 yarn add @inprodi/icons
+
+# With npm
+npm install @inprodi/icons
 ```
 
 ### Usage icons
