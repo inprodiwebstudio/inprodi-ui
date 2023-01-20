@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.1.0...v2.2.0) (2023-01-20)
+
+
+### Features
+
+* **inprodi-icons:** new filled and outline icons added ([64239fe](https://github.com/inprodiwebstudio/inprodi-ui/commit/64239fe13421121c317cfc9b3f4bbd546f2ab961))
+
+
+
+
+
 # [2.1.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.0.1...v2.1.0) (2023-01-20)
 
 
