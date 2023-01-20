@@ -1,6 +1,8 @@
+import React, { ReactNode }                                   from "react";
 import { useFormContext, Controller }                         from "react-hook-form";
 import { InputVariant, MantineSize, Textarea, TextareaProps } from "@mantine/core";
 import { useFocusWithin }                                     from "@mantine/hooks";
+import { InputHelpLabel, InputHelpLabelProps }                from "../InputHelpLabel";
 import styles                                                 from "../styles";
 
 export interface RHFTextAreaProps extends TextareaProps, React.RefAttributes<HTMLTextAreaElement> {
@@ -36,10 +38,22 @@ export interface RHFTextAreaProps extends TextareaProps, React.RefAttributes<HTM
     * Input varaint type: To see more: [textarea](https://mantine.dev/core/textarea/)
     */
 	variant ?: InputVariant;
+	/**
+   * Tooltip label
+   */
+	help ?: ReactNode;
+	/**
+    * All the props to customize all the label and helper node.
+    */
+	helpLabelProps ?: Omit<InputHelpLabelProps, "label" | "helpLabel">;
 }
 
 export const RHFTextArea = ({
 	name,
+	size,
+	help,
+	withAsterisk,
+	helpLabelProps,
 	onChange,
 	label = "",
 	autosize = false,
@@ -48,6 +62,7 @@ export const RHFTextArea = ({
 	const { ref, focused } = useFocusWithin();
 	const { classes } = styles({ focused });
 	const { control } = useFormContext();
+	const showInputHelp = !!(help && label);
 	return (
 		<Controller
 			name={name}
@@ -61,15 +76,29 @@ export const RHFTextArea = ({
 					<Textarea
 						{...field}
 						ref={ref}
-						error={!!error}
+						name={name}
+						size={size}
+						error={error?.message}
 						autosize={autosize}
+						withAsterisk={!showInputHelp ? withAsterisk : false}
 						onChange={handleChange}
-						label={error?.message ? error.message : label}
+						label={
+							showInputHelp ?
+								<InputHelpLabel
+									size={size}
+									label={label}
+									helpLabel={help}
+									required={withAsterisk}
+									{...helpLabelProps}
+								/>
+								:
+								label
+						}
 						classNames={{
 							input        : classes.input,
 							invalid      : classes.invalid,
 							rightSection : error && classes.icon,
-							label        : `${classes.label} ${error && classes.labelError}`,
+							label        : classes.label,
 						}}
 						{...rest}
 					/>

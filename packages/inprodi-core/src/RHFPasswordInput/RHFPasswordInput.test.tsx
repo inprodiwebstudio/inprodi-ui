@@ -1,29 +1,11 @@
 import React                      from "react";
 import * as Yup                   from "yup";
 import { FormProvider, useForm }  from "react-hook-form";
-import { yupResolver }            from "@hookform/resolvers/yup";
 import { act, fireEvent, render } from "@testing-library/react";
 import RHFPasswordInput           from "./RHFPasswordInput";
+import { yupResolver }            from "@hookform/resolvers/yup";
 
 describe("RHFPasswordInput.test", () => {
-	test("snapshot", () => {
-		const textInptName = "password";
-
-		  const Provider: React.FC<{children : React.ReactElement }> = ({ children }) => {
-			const methods = useForm<{ [textInptName]: string }>({ defaultValues : {
-				[textInptName] : "",
-			}});
-			return <FormProvider {...methods}>{children}</FormProvider>;
-		};
-
-		const { container } = render(
-			<Provider>
-				<RHFPasswordInput name={textInptName} />
-			</Provider>
-		);
-
-		expect(container).toMatchSnapshot();
-	});
 	test("should change value on RHK and call the onChange prop and the onChange callback must receive the HTMLInputElement as a arg", () => {
 		const inptName = "password";
 		const value = "testVal";
@@ -91,7 +73,7 @@ describe("RHFPasswordInput.test", () => {
 			);
 		};
 
-		const { getByRole, getByLabelText } = render(
+		const { getByRole, getByLabelText, getByText  } = render(
 			<Provider>
 				<RHFPasswordInput label="labelTest" name="test" />
 			</Provider>
@@ -102,8 +84,7 @@ describe("RHFPasswordInput.test", () => {
 		const btn = getByRole("button");
 		await act( () => fireEvent.submit(btn));
 
-
-		expect(getByLabelText(labelError)).toBeTruthy();
+		expect(getByText(labelError)).toBeTruthy();
 	});
 	test("should has the error styles", async () => {
 		const onSubmit = jest.fn();

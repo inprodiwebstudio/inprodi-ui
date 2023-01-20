@@ -1,4 +1,6 @@
 export * from "./FormProvider";
+export * from "./HelpTooltip";
+export * from "./InputHelpLabel";
 export * from "./Link";
 export * from "./RHFSwitch";
 export * from "./RHFTextArea";

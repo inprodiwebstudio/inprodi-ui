@@ -46,9 +46,9 @@ Invalid.args = {
 	label        : "Password",
 	name         : "basic-inpt-password",
 	description  : "",
-	error        : true,
+	error        : "Campo requerido",
 	radius       : "sm",
 	size         : "md",
-	withAsterisk : false,
+	withAsterisk : true,
 };
 

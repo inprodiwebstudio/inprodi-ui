@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.1.0...v2.2.0) (2023-01-20)
+
+**Note:** Version bump only for package @inprodi/core
+
+
+
+
+
+# [2.1.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.0.1...v2.1.0) (2023-01-20)
+
+
+### Bug Fixes
+
+* **inputs:** new features and styles in inptus ([a47d53a](https://github.com/inprodiwebstudio/inprodi-ui/commit/a47d53ab2b7ccfb6d63b2157b11dde4eed6d5517))
+
+
+
+
+
+## [2.0.1](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.0.0...v2.0.1) (2023-01-18)
+
+
+### Bug Fixes
+
+* **tsconfig:** build @inprodi/core fixed ([aeea460](https://github.com/inprodiwebstudio/inprodi-ui/commit/aeea460406f143cf21dd422875dcd29038fd0b29))
+
+
+
+
+
+# [2.0.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v1.1.0...v2.0.0) (2023-01-18)
+
+
+### Bug Fixes
+
+* **inprodiiconsb:** userOutline added ([c622bbb](https://github.com/inprodiwebstudio/inprodi-ui/commit/c622bbb3c305f2d903fa7285ad6a9b10ae1545e9))
+
+
+* Dev (#4) ([635cb8c](https://github.com/inprodiwebstudio/inprodi-ui/commit/635cb8c403fe2be68ffde4a2481ce85c10feb702)), closes [#4](https://github.com/inprodiwebstudio/inprodi-ui/issues/4)
+
+
+### BREAKING CHANGES
+
+* all the icons names have a prefix of their variants
+
+* style: eslint format on App
+
+* fix: inprodi-core from src
+
+* feat: icons renamed an come from inprodi-icons/dist
+
+* docs: filled, outline and color icons added on redme
+
+* fix: @inprodi/core comes from dist
+
+* feat: mantineProvider and theme config added on story book
+
+* feat(inprodi-core): typography components added
+
+* feat(inprodi-core): typography added
+
+
+
+
+
+
 # [1.1.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v1.0.1...v1.1.0) (2023-01-11)
 
 **Note:** Version bump only for package @inprodi/core

@@ -14,7 +14,8 @@ export interface TextGroupProps extends TextProps {
 	wrapperProps ?: FlexProps;
 	size ?: MantineNumberSize;
 	/**
-    * color text: DefaultMantineColor = "dark" | "gray" | "red" | "pink" | "grape" | "violet" | "indigo" | "blue" | "cyan" | "green" | "lime" | "yellow" | "orange" | "teal" | (string & {})
+    * color text: DefaultMantineColor = "dark" | "gray" | "red" | "pink" | "grape" | "violet"
+	* | "indigo" | "blue" | "cyan" | "green" | "lime" | "yellow" | "orange" | "teal" | (string & {})
     */
 	color ?: "dimmed" | DefaultMantineColor;
 }
