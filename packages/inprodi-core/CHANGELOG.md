@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.2.0...v3.0.0) (2023-02-02)
+
+
+### Features
+
+* icons renamed an come from inprodi-icons/dist ([92f0394](https://github.com/inprodiwebstudio/inprodi-ui/commit/92f039430756ce3e88ea7217b5f85c1be10c0223))
+* **inprodi-core:** typography added ([b65970d](https://github.com/inprodiwebstudio/inprodi-ui/commit/b65970de1c4b0ebd520e29e6774d952dbe28e061))
+* **inprodi-core:** typography components added ([2e8b884](https://github.com/inprodiwebstudio/inprodi-ui/commit/2e8b8847a41236d2eef742966b1bbac3146475bf))
+* mantineProvider and theme config added on story book ([6191bd8](https://github.com/inprodiwebstudio/inprodi-ui/commit/6191bd8082d452361f41c05c047ad6e7511c414d))
+
+
+
+
+
+
 # [2.2.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.1.0...v2.2.0) (2023-01-20)
 
 **Note:** Version bump only for package @inprodi/core
