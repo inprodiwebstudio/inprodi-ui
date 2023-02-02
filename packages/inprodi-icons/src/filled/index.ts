@@ -1,6 +1,8 @@
 export { default as AvatarFilled } from "./AvatarFilled";
 export { default as BankFilled } from "./BankFilled";
+export { default as BossFilled } from "./BossFilled";
 export { default as BrochureFilled } from "./BrochureFilled";
+export { default as CollaboratorFilled } from "./CollaboratorFilled";
 export { default as ContractFilled } from "./ContractFilled";
 export { default as CurriculumFilled } from "./CurriculumFilled";
 export { default as DiamondFilled } from "./DiamondFilled";
@@ -9,6 +11,7 @@ export { default as EmptyBoxFilled } from "./EmptyBoxFilled";
 export { default as GradeFilled } from "./GradeFilled";
 export { default as HandshakeFilled } from "./HandshakeFilled";
 export { default as IdCardFilled } from "./IdCardFilled";
+export { default as KeyFilled } from "./KeyFilled";
 export { default as LinkFilled } from "./LinkFilled";
 export { default as LockFilled } from "./LockFilled";
 export { default as MapPinFilled } from "./MapPinFilled";
