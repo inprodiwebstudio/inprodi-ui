@@ -11,9 +11,10 @@
     - [Publish](#publish)
 
 ## Links
-- [Storybook documentation](https://guileless-parfait-5f3c72.netlify.app/?path=/story/core-form-textarea--basic)
+- [Storybook documentation](https://guileless-parfait-5f3c72.netlify.app/?path=/story/inprodi-icons-iconography--page)
 ## Packages
 - [@inprodi/core](https://github.com/inprodiwebstudio/inprodi-ui/tree/main/packages/inprodi-core): ui library boosted by [mantine](https://mantine.dev/)
+- [@inprodi/icons](https://github.com/inprodiwebstudio/inprodi-ui/tree/main/packages/inprodi-icons): react icons library
 ## Monorepo
 To archive the following aproach @inprodi/core, @inprodi/icons, @inprodi/dropzone, etc. We need to decide the monorepo system.
 ### What is a monorepo?
@@ -36,6 +37,11 @@ packages/
             ...
         package.json
         jest.config.js
+        tsconfig.json
+    inrpodi-icons/
+        src/
+            ...
+        package.json
         tsconfig.json
 
 package.json

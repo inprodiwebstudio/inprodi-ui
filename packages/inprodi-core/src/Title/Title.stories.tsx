@@ -18,8 +18,6 @@ const Template: ComponentStory<typeof Title> = (args : TitleProps) => {
 		</Title>
 	);
 };
-// Title font-size: h1-h6 or any valid CSS font-size value
-// MantineNumberSize
 export const H1 = Template.bind({});
 H1.args = {
 	order : 1,
