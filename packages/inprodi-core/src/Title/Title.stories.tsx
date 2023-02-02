@@ -18,7 +18,6 @@ const Template: ComponentStory<typeof Title> = (args : TitleProps) => {
 		</Title>
 	);
 };
-
 export const H1 = Template.bind({});
 H1.args = {
 	order : 1,
