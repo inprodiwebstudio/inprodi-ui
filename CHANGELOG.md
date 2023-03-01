@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v3.0.0...v4.0.0) (2023-03-01)
+
+
+* Dev (#6) ([dd308d6](https://github.com/inprodiwebstudio/inprodi-ui/commit/dd308d625f5cb4b91b9d7a73b8d9a919f0d99cee)), closes [#6](https://github.com/inprodiwebstudio/inprodi-ui/issues/6)
+* Dev (#5) ([2273c0a](https://github.com/inprodiwebstudio/inprodi-ui/commit/2273c0a08a1141fdc20f7573cb547acfa05cd42d)), closes [#5](https://github.com/inprodiwebstudio/inprodi-ui/issues/5)
+
+
+### Features
+
+* new icons added ([8182d59](https://github.com/inprodiwebstudio/inprodi-ui/commit/8182d59be58ac3d643cd985c7fc76f9ebcf5b952))
+
+
+### BREAKING CHANGES
+
+* all the icons names have a prefix of their variants
+
+* style: eslint format on App
+
+* fix: inprodi-core from src
+
+* feat: icons renamed an come from inprodi-icons/dist
+
+* docs: filled, outline and color icons added on redme
+
+* fix: @inprodi/core comes from dist
+
+* feat: mantineProvider and theme config added on story book
+
+* feat(inprodi-core): typography components added
+
+* feat(inprodi-core): typography added
+
+* feat(inprodi-icons): new filled and outline icons
+
+* v3.0.0
+
+* chore: new build icons
+* all the icons names have a prefix of their variants
+
+* style: eslint format on App
+
+* fix: inprodi-core from src
+
+* feat: icons renamed an come from inprodi-icons/dist
+
+* docs: filled, outline and color icons added on redme
+
+* fix: @inprodi/core comes from dist
+
+* feat: mantineProvider and theme config added on story book
+
+* feat(inprodi-core): typography components added
+
+* feat(inprodi-core): typography added
+
+* feat(inprodi-icons): new filled and outline icons
+
+
+
+
+
+
 # [3.0.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.2.0...v3.0.0) (2023-02-02)
 
 

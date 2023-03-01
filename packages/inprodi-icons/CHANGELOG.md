@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v3.0.0...v4.0.0) (2023-03-01)
+
+
+### Features
+
+* new icons added ([8182d59](https://github.com/inprodiwebstudio/inprodi-ui/commit/8182d59be58ac3d643cd985c7fc76f9ebcf5b952))
+
+
+
+
+
+
 # [3.0.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v2.2.0...v3.0.0) (2023-02-02)
 
 
