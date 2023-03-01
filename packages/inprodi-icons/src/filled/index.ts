@@ -1,3 +1,4 @@
+export { default as Svg3DCubeFilled } from "./3DCubeFilled";
 export { default as AvatarFilled } from "./AvatarFilled";
 export { default as BankFilled } from "./BankFilled";
 export { default as BossFilled } from "./BossFilled";
@@ -17,6 +18,7 @@ export { default as LockFilled } from "./LockFilled";
 export { default as MapPinFilled } from "./MapPinFilled";
 export { default as OrganigramFilled } from "./OrganigramFilled";
 export { default as PaperFilled } from "./PaperFilled";
+export { default as PinFilled } from "./PinFilled";
 export { default as ReceiptFilled } from "./ReceiptFilled";
 export { default as StarFilled } from "./StarFilled";
 export { default as StrategyFilled } from "./StrategyFilled";
