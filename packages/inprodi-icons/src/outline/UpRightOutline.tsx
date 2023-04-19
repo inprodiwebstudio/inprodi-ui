@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 import IconHoc from "../IconHoc";
-function SvgDownRightOutline(props: SVGProps<SVGSVGElement>) {
+function SvgUpRightOutline(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width={props.width || 16}
@@ -11,18 +11,18 @@ function SvgDownRightOutline(props: SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clipPath="url(#DownRightOutline_svg__a)">
+      <g clipPath="url(#UpRightOutline_svg__a)">
         <path
-          d="M.617 0a.617.617 0 0 0-.43 1.06l11.7 11.7h-4.27a.616.616 0 1 0 0 1.234H13.3a.618.618 0 0 0 .695-.696v-5.68a.616.616 0 1 0-1.234 0v4.27L1.06.187A.617.617 0 0 0 .617 0Z"
+          d="M7.622 0a.617.617 0 1 0 0 1.235h4.27L.19 12.937a.617.617 0 1 0 .873.873L12.765 2.107v4.271a.618.618 0 1 0 1.235 0V.618A.617.617 0 0 0 13.383 0H7.622Z"
           fill={props.color || `currentColor`}
         />
       </g>
       <defs>
-        <clipPath id="DownRightOutline_svg__a">
+        <clipPath id="UpRightOutline_svg__a">
           <path fill="#fff" d="M0 0h14v14H0z" />
         </clipPath>
       </defs>
     </svg>
   );
 }
-export default IconHoc(SvgDownRightOutline);
+export default IconHoc(SvgUpRightOutline);
