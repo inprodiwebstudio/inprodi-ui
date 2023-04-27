@@ -21,7 +21,8 @@
     "test": "yarn lerna run test",
     "test:watch": "yarn lerna run test:watch",
     "lerna-version" : "yarn lerna version --no-private",
-    "lerna-publish": "yarn build && yarn lerna run publish --no-private",
+    "lerna-build-publish": "yarn build && yarn lerna run publish --no-private",
+    "lerna-publish": "yarn lerna run publish --no-private",
     "commit": "cz"
   },
   "workspaces": {
