@@ -3,6 +3,7 @@ export { default as AvatarFilled } from "./AvatarFilled";
 export { default as BankFilled } from "./BankFilled";
 export { default as BossFilled } from "./BossFilled";
 export { default as BrochureFilled } from "./BrochureFilled";
+export { default as CampfireFilled } from "./CampfireFilled";
 export { default as CollaboratorFilled } from "./CollaboratorFilled";
 export { default as ContractFilled } from "./ContractFilled";
 export { default as CurriculumFilled } from "./CurriculumFilled";

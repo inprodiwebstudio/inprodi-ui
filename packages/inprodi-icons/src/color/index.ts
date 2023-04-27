@@ -1,3 +1,4 @@
+export { default as CampfireColor } from "./CampfireColor";
 export { default as ExcelColor } from "./ExcelColor";
 export { default as FileColor } from "./FileColor";
 export { default as ImageColor } from "./ImageColor";
