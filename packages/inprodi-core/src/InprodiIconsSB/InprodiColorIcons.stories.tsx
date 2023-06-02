@@ -1,6 +1,6 @@
 import React                             from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { WordColor }                   from "../../../inprodi-icons/dist";
+import { WordColor }                     from "../../../inprodi-icons/dist";
 
 export default {
 	title     : "Inprodi Icons/Color",
