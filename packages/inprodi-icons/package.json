@@ -2,7 +2,7 @@
   "name": "@inprodi/icons",
   "description": "Inprodi react icons library",
   "private": false,
-  "version": "4.0.4",
+  "version": "4.0.5",
   "author": "Nestor Eduardo Navarro Arizaga",
   "license": "MIT",
   "main": "dist/index.js",
@@ -30,7 +30,8 @@
     "svgr": "yarn svgr-outline && yarn svgr-filled && yarn svgr-color",
     "clear-all": "rm -rf build node_modules",
     "clean": "rm -rf src/outline && rm -rf src/filled && rm -rf src/color && rm -rf dist",
-    "build": "yarn clean && yarn svgr && rollup -c"
+    "build": "yarn clean && yarn svgr && rollup -c",
+    "npm:publish": "npm publish --access public"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
