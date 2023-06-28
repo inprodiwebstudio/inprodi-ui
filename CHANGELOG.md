@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.7](https://github.com/inprodiwebstudio/inprodi-ui/compare/v4.0.6...v4.0.7) (2023-06-28)
+
+**Note:** Version bump only for package inprodi
+
+
+
+
+
+## [4.0.6](https://github.com/inprodiwebstudio/inprodi-ui/compare/v4.0.5...v4.0.6) (2023-06-22)
+
+**Note:** Version bump only for package inprodi
+
+
+
+
+
+
 ## [4.0.5](https://github.com/inprodiwebstudio/inprodi-ui/compare/v4.0.4...v4.0.5) (2023-06-02)
 
 **Note:** Version bump only for package inprodi
