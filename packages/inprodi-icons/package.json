@@ -2,7 +2,7 @@
   "name": "@inprodi/icons",
   "description": "Inprodi react icons library",
   "private": false,
-  "version": "4.0.7",
+  "version": "4.2.0",
   "author": "Nestor Eduardo Navarro Arizaga",
   "license": "MIT",
   "main": "dist/index.js",
