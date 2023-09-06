@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v4.0.7...v4.3.0) (2023-09-06)
+
+
+### Features
+
+* **add new icons:** add new outline and filled icons ([6751fc9](https://github.com/inprodiwebstudio/inprodi-ui/commit/6751fc91fc49634e3aa08a2d340cc0a4016d0231))
+* **packages/inprodi-icons/outline:** new icons added ([779b15e](https://github.com/inprodiwebstudio/inprodi-ui/commit/779b15eec61424fb7be375d0d2abbf3104638295))
+* **packages/inprodi-icons:** new color and outline icons added ([df4683d](https://github.com/inprodiwebstudio/inprodi-ui/commit/df4683d87bef49451c3dcb7cbac3b6a371b97536))
+* **packages/inprodi-icons:** new icons ([ff6f3f6](https://github.com/inprodiwebstudio/inprodi-ui/commit/ff6f3f68b0b9f933536f426c650084e95be4bcd6))
+
+
+
+
+
+
 # [4.2.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v4.1.0...v4.2.0) (2023-08-04)
 
 
