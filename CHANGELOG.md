@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v4.3.0...v4.4.0) (2024-03-01)
+
+
+### Features
+
+* **inprodi-icons:** new icons added ([1a47f00](https://github.com/inprodiwebstudio/inprodi-ui/commit/1a47f00883f6fe7621544d041ba76c7b4839a1d7))
+
+
+
+# [4.2.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v4.1.0...v4.2.0) (2023-08-04)
+
+
+
+# [4.1.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v4.0.7...v4.1.0) (2023-06-28)
+
+
+### Features
+
+* **packages/inprodi-icons:** interface InprodiProps exported ([a134feb](https://github.com/inprodiwebstudio/inprodi-ui/commit/a134feb6af9b46037a92fa7cbfd71ab27e7a7c85))
+
+
+
+
+
+
 # [4.3.0](https://github.com/inprodiwebstudio/inprodi-ui/compare/v4.0.7...v4.3.0) (2023-09-06)
 
 
